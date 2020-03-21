@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+  <div style="padding:100px;">
+  <form class="form-inline" action="/TextSearch" method="POST">
+    <div class="form-group">
+      
+      <input type="text" class="form-control" id="textquery" name="query" placeholder="Enter your search query..">
+    </div>
+    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+  </form>
+</div>
+{% endblock %}
+{% block results%}{% endblock%}

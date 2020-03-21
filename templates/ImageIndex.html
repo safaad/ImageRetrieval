@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+  
+  <div  style="padding:100px;">
+  <form action = "http://localhost:5000/ImageSearch" method = "POST" 
+  enctype = "multipart/form-data" action="/ImageSearch" class="form-inline">
+
+  <input type = "file" name = "file" class="form-control" />
+  <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+</form>
+</div>
+{% endblock %}
+{% block results%}{% endblock%}
